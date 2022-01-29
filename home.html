@@ -1,47 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Online Order Book System</title>
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      body {
-        background: lightsalmon;
-      }
-      h1 {
-        padding: 25%;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 80px;
-        border-color: 10px solid black;
-        padding: 20px 20px 20px 20px;
-        text-align: center;
-        margin-top: 200px;
-        margin-left: 200px;
-        margin-right: 200px;
-        margin-bottom: 200px;
-        border: 2px solid green;
-        border-width: 20px;
-        background-color: hotpink;
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-      }
-      a:link {
-        color: rgb(50, 20, 220);
-        text-align: center;
-        background-color: chartreuse;
-        border: burlywood 2px;
-        margin: 20%;
-
-        padding: 20px;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="home.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
   </head>
-
   <body>
-    <div class="home">
-      <h1 style="color: blue">Online Book Order System</h1>
-      <a href="">Admin Page</a>
-      <a href="">Customer Page</a>
+    <header>
+      <h1>Order Book System</h1>
+      <nav>
+        <a href="index.html">Customer</a>
+        <a href="#">Admin</a>
+        <a href="#" class="btn--show-modal">About</a>
+      </nav>
+    </header>
+    <img src="img3.jpg" />
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        The problem statement is focused on building a workable Order-BOOK
+        Management System
+      </h2>
     </div>
+    <div class="overlay hidden"></div>
+    <script src="about.js"></script>
   </body>
 </html>
